@@ -1,0 +1,17 @@
+ng build --prod --base-href="https://sparesh21.github.io/scott-website/"
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/sparesh21/scott-website.git
+
+git push -u origin master
+
+angular-cli-ghpages
+
+npm i -g angular-cli-ghpages
+
+SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8

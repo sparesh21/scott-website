@@ -1,0 +1,108 @@
+<div class="menu-overlay"></div>
+<!-- <a href="javascript:void(0);" (click)="closeMenu()" class="close-btn">Close</a> -->
+<div class="header-bar" [ngClass]="{'menuOpen': headerOpen}">
+    <div class="header-item">
+        <div class="menu-btn">
+            <a href="javascript:void(0);" (click)="openMenu()">
+                <span>
+                    <small class="line"></small>
+                    <small class="line"></small>
+                    <small class="line"></small>
+                    <small class="line"></small>
+                </span>
+                <strong>{{menuName}}</strong>
+            </a>
+        </div>
+    </div>
+    <div class="header-item">
+        <ul class="social-feeds">
+            <li>
+                <a href="javascript:void(0);">
+                    <fa name="facebook"></fa>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <fa name="twitter"></fa>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <fa name="instagram"></fa>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-item">
+        <div class="logo">
+            <a href="javascript:void(0)"><img src="assets/images/logo.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="continer-fluild">
+        <div class="row">
+
+        </div>
+    </div>
+</header>
+<router-outlet></router-outlet>
+<footer>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-sm-8">
+                <div class="row align-items-start">
+                    <div class="col-sm-3">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/images/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="footer-menu">
+                            <a href="#">Home</a>
+                            <a href="#">Our Story</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="footer-menu">
+                            <a href="#">Men</a>
+                            <a href="#">Women</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="footer-menu">
+                            <a href="#">Style</a>
+                            <a href="#">Store Locator</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footer-menu">
+                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="rights-container">
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-sm-4">
+                            <div class="footer-menu">
+                                <a href="#">info@Scott.Com</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="footer-menu">
+                                <p>
+                                    &copy; 2018 Scott Eyewear All rights reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

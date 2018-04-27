@@ -1,0 +1,248 @@
+<section class="scroll-panel home-container" data-section-name="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="home-wrapper">
+                    <div class="scott-content">
+                        <h1>scott</h1>
+                        <h1>summer</h1>
+                        <h1>coming</h1>
+                        <h1>soon</h1>
+                        <a href="javascript:void(0);" class="orange-btn" mdbRippleRadius>Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="javascript:void(0);">
+            <img src="assets/images/scroll-down/scroll-orange.png" alt="scroll">
+        </a>
+    </div>
+</section>
+<section class="scroll-panel about-container" data-section-name="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="about-content">
+                    <div class="title-container">
+                        <h2>about scott</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="javascript:void(0);" class="white-btn waves-light" mdbRippleRadius>explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="about-content">
+                    <div class="glasses-wrapper">
+                        <div class="item-img">
+                            <img src="assets/images/glasses.png" alt="galsses">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="javascript:void(0);">
+            <img src="assets/images/scroll-down/scroll-blue.png" alt="scroll">
+        </a>
+    </div>
+</section>
+<section class="scroll-panel gender-container" data-section-name="gender">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 no-padding">
+                <div class="gender-content">
+                    <div class="img-effect">
+                        <img src="assets/images/men.png" alt="galsses">
+                    </div>
+                    <div class="gender-btn">
+                        <a href="javascript:void(0);" class="big-btn" mdbRippleRadius>men</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 no-padding">
+                <div class="gender-content">
+                    <div class="img-effect">
+                        <img src="assets/images/women.png" alt="galsses">
+                    </div>
+                    <div class="gender-btn">
+                        <a href="javascript:void(0);" class="big-btn women" mdbRippleRadius>women</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="javascript:void(0);">
+            <img src="assets/images/scroll-down/scroll-blue.png" alt="scroll">
+        </a>
+    </div>
+</section>
+<section class="scroll-panel style-container" data-section-name="style">
+    <div class="container">
+        <div class="row">
+            <div class="style-wrapper">
+                <div class="col-sm-12">
+                    <div class="col-sm-4 offset-sm-4">
+                        <div class="tab-container">
+                            <h2>style</h2>
+                            <ul class="style-tab">
+                                <li [ngClass]="tab == 'avuator'?'active':''" (click)="showDetails('avuator')">
+                                    <span></span>
+                                    <p>avuator</p>
+                                </li>
+                                <li [ngClass]="tab == 'way_farer'?'active':''" (click)="showDetails('way_farer')">
+                                    <span></span>
+                                    <p>way farer</p>
+                                </li>
+                                <li [ngClass]="tab == 'sport'?'active':''" (click)="showDetails('sport')">
+                                    <span></span>
+                                    <p>sport</p>
+                                </li>
+                                <li [ngClass]="tab == 'polarised'?'active':''" (click)="showDetails('polarised')">
+                                    <span></span>
+                                    <p>polarised</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="tab-details">
+                            <div class="all" *ngIf="tabList == 'avuator'">
+                                <div class="avuator owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all" *ngIf="tabList == 'way_farer'">
+                                <div class="way_farer owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all" *ngIf="tabList == 'sport'">
+                                <div class="sport owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all" *ngIf="tabList == 'polarised'">
+                                <div class="polarised owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/images/glasses-two.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="javascript:void(0);">
+            <img src="assets/images/scroll-down/scroll-orange.png" alt="scroll">
+        </a>
+    </div>
+</section>
+<section class="scroll-panel trending-container" data-section-name="trending">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="trending-content">
+                    <div class="title-container">
+                        <h2>MOST TRENDING SUNGLASSES</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <a href="javascript:void(0);" class="white-btn waves-light" mdbRippleRadius>buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="trending-content">
+                    <div class="main-wrapper">
+                        <div class="upper-content">
+                            <div class="row align-items-end">
+                                <div class="col-sm-9">
+                                    <div class="shadow-effect">
+                                        <img src="assets/images/trending/1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="shadow-effect">
+                                        <img src="assets/images/trending/2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <div class="row align-items-start">
+                                <div class="col-sm-3">
+                                    <div class="shadow-effect">
+                                        <img src="assets/images/trending/3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="shadow-effect">
+                                        <img src="assets/images/trending/4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="javascript:void(0);">
+            <img src="assets/images/scroll-down/scroll-blue.png" alt="scroll">
+        </a>
+    </div>
+</section>
