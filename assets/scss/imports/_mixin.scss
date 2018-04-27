@@ -1,0 +1,22 @@
+@mixin btn($bg, $color, $hbg, $hcolor, $shwcolor) {
+    background: $bg;
+    color: $color;
+    font-size: 18px;
+    padding: 0;
+    border: 0;
+    height: 50px;
+    min-width: 210px;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 50px;
+    transition: ease-in 0.4s all;
+    font-weight: 700;
+    border-radius: 100px;
+    text-align: center;
+    &:hover {
+        background: $hbg;
+        color: $hcolor;
+        transition: ease-in 0.4s all;
+        box-shadow: 1px 5px 44px -8px rgba($shwcolor, 0.75);
+    }
+}

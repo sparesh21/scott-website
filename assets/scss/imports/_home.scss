@@ -1,0 +1,312 @@
+.home-container {
+    background: $black-color url(../../assets/images/banner/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 100%;
+    .home-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        .scott-content {
+            h1 {
+                font-size: 70px;
+                text-transform: uppercase;
+                line-height: 0.8;
+            }
+            .orange-btn {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.about-container {
+    &:before {
+        content: "";
+        background: $light-green-color;
+        width: 70%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    &:after {
+        content: "";
+        background: $pink-color;
+        width: 30%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+    }
+    .about-content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        .glasses-wrapper {
+            padding-top: 55px;
+            .item-img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.gender-container {
+    overflow: hidden;
+    &:before {
+        content: "";
+        background: $dark-blue-color;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    &:after {
+        content: "";
+        background: $dark-maroon-color;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+    }
+    .gender-content {
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+        .item-img {
+            img {
+                display: block;
+            }
+        }
+        .gender-btn {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            .big-btn {
+                &.women {
+                    &:hover {
+                        color: $maroon-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.style-container {
+    background: $cream-color;
+    padding-top: 150px;
+    .style-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .tab-container {
+            width: 100%;
+            margin-bottom: 40px;
+            h2 {
+                font-size: 50px;
+                text-align: center;
+                color: $secondary-color;
+                text-transform: uppercase;
+                width: 100%;
+            }
+            .style-tab {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    border-bottom: 1px dashed $white-color;
+                    width: 90%;
+                    top: 15%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+                li {
+                    width: 100%;
+                    padding-right: 25%;
+                    position: relative;
+                    height: 60px;
+                    cursor: pointer;
+                    transition: 0.4s all ease;
+                    z-index: 1;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    span {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: 1px solid $white-color;
+                        display: block;
+                        position: relative;
+                        transition: 0.4s all ease;
+                        background: $cream-color;
+                    }
+                    p {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transform: translateX(-40%);
+                        font-weight: 700;
+                        color: $cream-text-color;
+                        text-transform: uppercase;
+                        transition: 0.4s all ease;
+                    }
+                    &:nth-child(3) {
+                        p {
+                            transform: translateX(-28%);
+                        }
+                    }
+                    &.active,
+                    &:hover {
+                        transition: 0.4s all ease;
+                        span {
+                            &:after {
+                                content: '';
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                background: $white-color;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                margin: 0 auto;
+                                left: 0;
+                                right: 0;
+                                transition: 0.4s all ease;
+                            }
+                        }
+                        p {
+                            color: $secondary-color;
+                            transition: 0.4s all ease;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-details {
+            min-height: 250px;
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    position: absolute;
+                    top: 25%;
+                    font-size: 40px;
+                    width: 40px;
+                    margin: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    background: $white-color;
+                    border-radius: 50%;
+                    span {
+                        display: none;
+                    }
+                    &:hover {
+                        background: $secondary-color;
+                        &:after {
+                            color: $white-color;
+                            transition: .5s all ease;
+                            text-shadow: 2px 4px 2px rgba($orange-color, .3);
+                        }
+                    }
+                    &:after {
+                        font-family: 'FontAwesome';
+                        font-size: 30px;
+                        position: absolute;
+                        color: $cream-text-color;
+                        transition: .5s all ease;
+                        font-weight: 900;
+                    }
+                }
+                .owl-prev {
+                    left: -20%;
+                    padding-right: 10px;
+                    &:after {
+                        content: '\f104';
+                        top: -1px;
+                        left: 0;
+                        right: 4px;
+                    }
+                }
+                .owl-next {
+                    right: -20%;
+                    &:after {
+                        content: '\f105';
+                        top: -1px;
+                        left: 3px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.trending-container {
+    &:before {
+        content: "";
+        background: $royal-blue-color;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    &:after {
+        content: "";
+        background: $fade-blue-color;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+    }
+    .trending-content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        .title-container {
+            h2 {
+                color: $white-color;
+            }
+            p {
+                color: $white-color;
+            }
+            a {
+                color: $dark-green-color;
+                &:hover {
+                    color: $white-color;
+                }
+            }
+        }
+        .upper-content {
+            padding-top: 15%;
+        }
+        .bottom-content {
+            padding-top: 25px;
+        }
+    }
+}
