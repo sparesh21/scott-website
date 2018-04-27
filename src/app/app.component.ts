@@ -57,8 +57,8 @@ export class AppComponent {
       })
       .to('header', 1, {
         opacity: 1,
+        display:'block',
         ease: Linear.easeNone,
-        //onComplete: headerMenu;
       })
       setTimeout(() => {
         this.headerOpen = true;
@@ -68,8 +68,8 @@ export class AppComponent {
       var tl = new TimelineMax();
       tl.to('header', 0.1, {
         opacity: 0,
+        display:'none',
         ease: Linear.easeNone,
-        //onComplete: headerMenu;
       })
       tl.to('.menu-overlay', 1.6, {
         left: '-100%',
