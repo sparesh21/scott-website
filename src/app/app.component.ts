@@ -55,18 +55,33 @@ export class AppComponent {
           delay: 0.3,
 
       })
-      .to('header', 1, {
+      .to('header', .1, {
         opacity: 1,
         display:'block',
         ease: Linear.easeNone,
       })
+      .staggerFromTo('.menu-item ul li', 1, {
+        opacity:0,
+        y: 50,
+      }, {
+        opacity: 1,
+        y: 0,
+        ease: Back.easeOut,
+      }, .3);
+      
       setTimeout(() => {
         this.headerOpen = true;
         this.menuName = "close";
       }, 500);
+
+
     }else{
       var tl = new TimelineMax();
-      tl.to('header', 0.1, {
+      tl.staggerTo('.menu-item ul li', .8, {
+        opacity: 0,
+        y: 50,
+        ease: Back.easeOut,
+      }, .3).to('header', 0.1, {
         opacity: 0,
         display:'none',
         ease: Linear.easeNone,
@@ -78,10 +93,11 @@ export class AppComponent {
         xPercent: -50,
       })
       
+      
       setTimeout(() => {
         this.headerOpen = false;
         this.menuName = "menu";
-      }, 500);
+      }, 1500);
     }
       
   }
