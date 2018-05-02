@@ -149,7 +149,7 @@
 }
 
 header {
-    background: #ccc;
+    background: $white-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -158,4 +158,101 @@ header {
     z-index: 13;
     padding: 30px;
     opacity: 0;
+    .menu-item {
+        margin-top: 80px;
+        ul {
+            li {
+                display: flex;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            dl {
+                display: flex;
+                align-items: center;
+                padding-left: 60px;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 28px;
+                    top: 0;
+                    height: 100%;
+                    width: 4px;
+                    background: $secondary-color;
+                }
+                dt {
+                    margin-right: 40px;
+                    margin-bottom: 0px;
+                    a {
+                        font-size: 24px;
+                    }
+                    &:last-child {}
+                }
+            }
+            a {
+                font-weight: 800;
+                font-size: 60px;
+                color: $secondary-color;
+                text-transform: uppercase;
+                &:hover {
+                    color: $orange-color;
+                }
+            }
+            aside {
+                width: 30%;
+                position: relative;
+                overflow: hidden;
+                .search {
+                    position: absolute;
+                    right: -5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 60px;
+                    width: 50px;
+                    background: $white-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 36px;
+                        color: $orange-color;
+                    }
+                }
+                input {
+                    width: 100%;
+                    color: rgba($secondary-color, 1);
+                    font-size: 40px;
+                    font-weight: 400;
+                    padding-bottom: 15px;
+                    margin-top: 20px;
+                    &::-webkit-input-placeholder {
+                        color: rgba($secondary-color, .5);
+                        font-style: italic;
+                    }
+                    &::-moz-placeholder {
+                        color: rgba($secondary-color, .5);
+                        font-style: italic;
+                    }
+                    &:-ms-input-placeholder {
+                        color: rgba($secondary-color, .5);
+                        font-style: italic;
+                    }
+                    &:-moz-placeholder {
+                        color: rgba($secondary-color, .5);
+                        font-style: italic;
+                    }
+                    &:focus {
+                        border-bottom: 1px solid $orange-color;
+                        box-shadow: 0 1px 0 0 $orange-color;
+                    }
+                    &:focus:not([readonly]) {
+                        border-bottom: 1px solid $orange-color;
+                        box-shadow: 0 1px 0 0 $orange-color;
+                    }
+                }
+            }
+        }
+    }
 }
