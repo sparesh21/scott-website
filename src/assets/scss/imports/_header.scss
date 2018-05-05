@@ -188,7 +188,6 @@ header {
                     a {
                         font-size: 24px;
                     }
-                    &:last-child {}
                 }
             }
             a {
@@ -198,6 +197,7 @@ header {
                 text-transform: uppercase;
                 &:hover {
                     color: $orange-color;
+                    text-shadow: 1px 3px 2px rgba(51, 51, 51, .3);
                 }
             }
             aside {

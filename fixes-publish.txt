@@ -15,3 +15,5 @@ angular-cli-ghpages
 npm i -g angular-cli-ghpages
 
 SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+
+onComplete: () => { this.headerFalse() }

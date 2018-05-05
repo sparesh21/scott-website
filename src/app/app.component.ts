@@ -45,7 +45,6 @@ export class AppComponent {
         skewX: -30,
         xPercent: -50,
         ease: Back.easeInOut.config(10),
-
       }, {
           left: '0%',
           skewType: "simple",
@@ -53,7 +52,6 @@ export class AppComponent {
           visibility: 'visible',
           xPercent: 0,
           delay: 0.3,
-
       })
       .to('header', .1, {
         opacity: 1,
@@ -67,14 +65,12 @@ export class AppComponent {
         opacity: 1,
         y: 0,
         ease: Back.easeOut,
+        
       }, .3);
+      console.log('working baby');
+      this.headerOpen = true;
+      this.menuName = "close";
       
-      setTimeout(() => {
-        this.headerOpen = true;
-        this.menuName = "close";
-      }, 500);
-
-
     }else{
       var tl = new TimelineMax();
       tl.staggerTo('.menu-item ul li', .8, {
@@ -91,15 +87,11 @@ export class AppComponent {
         skewType: "simple",
         skewX: -30,
         xPercent: -50,
-      })
-      
-      
-      setTimeout(() => {
-        this.headerOpen = false;
-        this.menuName = "menu";
-      }, 1500);
+      });
+      this.headerOpen = false;
+      this.menuName = "menu";
     }
       
   }
-
+  
 }
