@@ -1,0 +1,121 @@
+@media only screen and (min-width: 1920px) {
+    .about-container {
+        &:before {
+            width: 65%;
+        }
+        &:after {
+            width: 36%;
+        }
+    }
+    .style-container {
+        padding-top: 18%;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .about-container {
+        &:before {
+            width: 67%;
+        }
+        &:after {
+            width: 34%;
+        }
+    }
+    .style-container {
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .about-container {
+        &:before {
+            width: 69%;
+        }
+        &:after {
+            width: 32%;
+        }
+    }
+    .style-container {
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+    .glasses-wrapper {
+        .item-img {
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .glasses-wrapper {
+        .item-img {
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    .home-container {
+        background-size: contain;
+        background-position: 50% 50%;
+        .home-wrapper {
+            .scott-content {
+                h1 {
+                    font-size: 50px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    .title-container {
+        h2 {
+            font-size: 34px;
+        }
+    }
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about-content {
+            height: auto;
+            .glasses-wrapper {
+                .item-img {
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .gender-container {
+        &:before {
+            width: 100%;
+            height: 50%;
+        }
+        &:after {
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+        }
+        .gender-content {
+            height: auto;
+            .img-effect {
+                img {
+                    width: 67.5%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {}
